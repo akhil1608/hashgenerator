@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hash Generator</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<script type="text/javascript" src="hasher.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="my-2">
+				<p class="fs-5">
+					<span class="fw-bold">Assignment 09:</span>
+					<span class="fw-light">Project 3 - Hash Generator</span>
+					<span class="fw-light float-end">
+						<span class="fst-normal">Akhil Pillai</span>
+						(<span class="fst-italic">ap6863</span>)
+					</span>
+				</p>
+				<hr />
+				<form class="row">
+					<div class="col-4">
+						<input type="text" class="form-control form-control-sm" id="inputText" placeholder="Enter Input Text (longer inputs generate better hash)">
+					</div>
+					<div class="col-2">
+						<select class="form-select form-select-sm" id="bits">
+							<option value="64" selected>64 bits</option>
+							<option value="128">128 bits</option>
+							<option value="256">256 bits</option>
+						</select>
+					</div>
+					<div class="col-2">
+						<button id="hash" type="button" class="btn btn-primary border-dark btn-sm">Hash</button>
+						<button type="reset" class="btn btn-light border-dark btn-sm">Clear</button>
+					</div>
+				</form>
+				<hr />
+				<p id="outputBlock" class="fs-6">
+					<span class="fst-normal">Hash Generated: </span>
+					<span id="hashedText" class="fw-bold"></span>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
